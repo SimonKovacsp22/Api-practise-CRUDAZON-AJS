@@ -25,8 +25,8 @@ const displayProducts = async function() {
 
      items.forEach(product => {
          const listItem = document.createElement('li')
-         listItem.className = "list-group-item "
-         listItem.innerHTML = `<span>${product.name}</span>`
+         listItem.className = "list-group-item d-flex  "
+         listItem.innerHTML = `<span >name: ${product.name}</span> <span class="px-3">price: ${product.price}</span> <span class="px-3">des:  ${product.description}</span>`
          ul.appendChild(listItem)
      });
 
